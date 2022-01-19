@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Slider from "./components/slider-menu/Slider";
+import MacDes from "./components/mac-des/MacDes";
+import Data from './Data';
+import Img from "./components/media/Img";
+function App (){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Slider img={Img}/>
+      <MacDes data={Data}/>
+
     </div>
   );
 }
